@@ -1,9 +1,11 @@
-import Header from "./components/Header";
+import HeroSection from "./components/ui/HeroSection";
+
 export default function Home() {
   return (
     <>
-     <Header/>
-      <main className="min-h-screen "></main>
+      <main className="">
+        <HeroSection/>
+      </main>
     </>
   );
 }

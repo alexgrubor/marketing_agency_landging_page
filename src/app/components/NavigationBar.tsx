@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import NavLink from "next/link";
+import LetsChatButton from './ui/LetsChatButton';
 
 const NavigationBar = () => {
   
@@ -24,7 +25,7 @@ const NavigationBar = () => {
     transition: 'background-color 0.3s ease',
   };
   return (
-    <nav className="flex justify-between items-center p-4 text-white text-2xl" style={navBarStyle}>
+    <nav className="flex justify-between items-center p-4 shadow-sm shadow-secondBg text-white text-2xl z-30" style={navBarStyle}>
       <div>
         <NavLink href="/">LOGO</NavLink>
       </div>
@@ -32,7 +33,7 @@ const NavigationBar = () => {
         <li>
           <NavLink
             className="transition-all duration-300 hover:text-myPurple-600"
-            href="/about"
+            href="/about-us"
           >
             About Us
           </NavLink>
@@ -40,7 +41,7 @@ const NavigationBar = () => {
         <li>
           <NavLink
             className="transition-all duration-300 hover:text-myPurple-600"
-            href="/services"
+            href="/our-services"
           >
             Services
           </NavLink>
@@ -54,12 +55,7 @@ const NavigationBar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink
-            className="bg-myPurple-600 p-2 border border-bg transition-all duration-300 hover:bg-bg hover:text-myPurple-600 hover:border-myPurple-600"
-            href="/contact"
-          >
-            Let's chat
-          </NavLink>
+        <LetsChatButton href='/contact-us' text="Let's Chat"/>
         </li>
       </ul>
     </nav>
