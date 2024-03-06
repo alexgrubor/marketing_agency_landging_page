@@ -18,7 +18,6 @@ const MobileNavigationBar = () => {
     }
 
     return () => {
-      // Re-enable scrolling when the component is unmounted
       body.style.overflow = "visible";
     };
   }, [isOpen]);
