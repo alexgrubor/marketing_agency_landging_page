@@ -1,15 +1,23 @@
+import Image from "next/image";
 
 const page = () => {
   return (
     <div className=" mx-auto">
       <section className="p-4 py-6 min-h-screen text-secondBg mx-auto">
-        <h2 className="text-left text-6xl font-bold mb-4">
+        
+        <div>
+          <Image src={"./vibrons-svgrepo-com.svg"} alt="hero" width={920} height={880} />
+          </div>
+          <div>
+          <h2 className="text-left text-6xl font-bold mb-4">
           Challenging Convention, Accelerating Growth
         </h2>
         <p className="text-left text-2xl">
           WE ONLY BELIEVE IN DOING ONE KIND OF MARKETING: THE KIND THAT
           TRANSFORMS YOUR BUSINESS.
         </p>
+          </div>
+          
        
       </section>
 
