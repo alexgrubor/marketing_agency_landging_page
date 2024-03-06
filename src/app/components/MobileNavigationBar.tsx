@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavLink from "next/link";
 const MobileNavigationBar = () => {
   const [isOpen, setOpened] = useState(false);
@@ -7,7 +7,21 @@ const MobileNavigationBar = () => {
   const closeMenu = () => {
     setOpened(false);
   };
+  useEffect(() => {
+    const body = document.body;
 
+    // Disable scrolling when the menu is open
+    if (isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "visible";
+    }
+
+    return () => {
+      // Re-enable scrolling when the component is unmounted
+      body.style.overflow = "visible";
+    };
+  }, [isOpen]);
   return (
     <nav className="flex justify-between items-center bg-bg text-secondBg p-4">
       <div>
