@@ -1,3 +1,4 @@
+import BrandsInfiniteScroll from "./components/ui/BrandsInfiniteScroll";
 import HeroSection from "./components/ui/HeroSection";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <main className="">
         <HeroSection/>
+        <BrandsInfiniteScroll/>
       </main>
     </>
   );
