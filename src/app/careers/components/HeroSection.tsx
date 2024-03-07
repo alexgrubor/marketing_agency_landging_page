@@ -1,7 +1,7 @@
 import Image from "next/image"
 const HeroSection = () => {
   return (
-    <section className="min-h-screen text-secondBg p-4 flex flex-col md:flex-row justify-center items-center">
+    <section className="min-h-screen text-secondBg bg-bg p-4 flex flex-col md:flex-row justify-center items-center">
       <div className="mb-4 lg:mr-4 lg:mb-0 w-full md:w-[45%] p-4">
         <h1 className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-4 text-myPurple-600">
           Careers at Our Agency

@@ -7,10 +7,10 @@ return (
             <div className="mb-4 md:mb-0">
                 <h2 className="text-lg font-bold mb-2">Agency</h2>
                 <ul>
-                    <li><Link href="#">Our Services</Link></li>
-                    <li><Link href="#">Contact Us</Link></li>
+                    <li><Link href="/services">Our Services</Link></li>
+                    <li><Link href="/contact-us">Contact Us</Link></li>
                     <li>
-                        <Link href="#">Our Privacy Policy</Link>
+                        <Link href="/policy">Our Privacy Policy</Link>
                     </li>
 
                 </ul>
@@ -18,15 +18,15 @@ return (
             <div className="mb-4 md:mb-0">
                 <h2 className="text-lg font-bold mb-2">Company</h2>
                 <ul>
-                    <li><Link href="#">About Us</Link></li>
-                    <li><Link href="#">Careers</Link></li>
+                    <li><Link href="/about-us">About Us</Link></li>
+                    <li><Link href="/careers">Careers</Link></li>
                 </ul>
             </div>
             <div>
                 <h2 className="text-lg font-bold mb-2">Resources</h2>
                 <ul>
-                    <li><Link href="#">Blog</Link></li>
-                    <li><Link href="#">Newsletter</Link></li>
+                    <li><Link href="/blogs">Blog</Link></li>
+                    <li><Link href="/newsletter">Newsletter</Link></li>
                 </ul>
             </div>
         </div>

@@ -30,7 +30,7 @@ const Map = () => {
     setMap(null);
   }, []);
   return isLoaded ? (
-    <div className="flex flex-col md:flex-row bg-bg text-secondBg  w-[100vw] justify-around p-4 items-center gap-8">
+    <div className="flex flex-col md:flex-row custom-bg text-secondBg  w-[100vw] justify-around p-4 items-center gap-8">
         <div className="text-2xl md:pl-[6rem]">
             <h2 className="text-myPurple-600 my-2">Our Address</h2>
             <p>1234, Street Name</p>

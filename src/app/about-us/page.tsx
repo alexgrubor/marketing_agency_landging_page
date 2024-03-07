@@ -3,7 +3,7 @@ import Image from "next/image";
 const page = () => {
   return (
     <div className=" mx-auto">
-      <section className="p-4 py-6 min-h-screen text-secondBg mx-auto">
+      <section className="p-4 py-6 min-h-screen bg-bg text-secondBg mx-auto">
         
         <div>
           <Image src={"./vibrons-svgrepo-com.svg"} alt="hero" width={920} height={880} />
