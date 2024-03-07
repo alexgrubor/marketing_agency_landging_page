@@ -9,12 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@react-google-maps/api": "^2.19.3",
     "framer-motion": "^11.0.8",
     "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.4",
-    "tailwindcss-animated": "^1.0.1"
+    "react-hook-form": "^7.51.0",
+    "tailwindcss-animated": "^1.0.1",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
