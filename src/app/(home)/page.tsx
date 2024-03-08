@@ -1,9 +1,10 @@
 import OurServicesSection from "./components/OurServicesSection";
-import BrandsInfiniteScroll from "./components/ui/BrandsInfiniteScroll";
-import HeroSection from "./components/ui/HeroSection";
+import BrandsInfiniteScroll from "./components/BrandsInfiniteScroll";
+import HeroSection from "./components/HeroSection";
 import OurSuccess from "./components/OurSuccess";
 
 export default function Home() {
+
   return (
     <>
       <main className="">
@@ -11,6 +12,8 @@ export default function Home() {
         <BrandsInfiniteScroll />
         <OurServicesSection />
         <OurSuccess />
+     
+    
       </main>
     </>
   );
