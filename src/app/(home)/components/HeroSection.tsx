@@ -1,13 +1,25 @@
+'use client'
 import BigTextInline from "../../components/ui/BigTextInline";
 import LetsChatButton from "../../components/ui/LetsChatButton";
+import useResponsive from "@/hooks/useResponsive";
+import BackgroundVideo from "./Backgroundvideo";
+
+
 const HeroSection = () => {
+  const deviceType = useResponsive();
+
+
+
   return (
-    <section className="bg-bg text-secondBg h-screen flex  items-center justify-center relative">
+    <section className="bg-bg text-secondBg h-screen flex z-[10] opacity-100 items-center justify-center relative">
+      {deviceType === 'desktop' && (
+        <BackgroundVideo src="./videos/bgvideo.mp4" />
+      )}
 
-
+      
       <div className="text-container text-center mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4">
-          Boost{" "}
+          Boost
           <BigTextInline text="Your Brand" textColor="text-myPurple-600" /> with
           XYZ Marketing
         </h1>

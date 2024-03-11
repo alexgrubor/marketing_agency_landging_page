@@ -2,6 +2,7 @@ import OurServicesSection from "./components/OurServicesSection";
 import BrandsInfiniteScroll from "./components/BrandsInfiniteScroll";
 import HeroSection from "./components/HeroSection";
 import OurSuccess from "./components/OurSuccess";
+import Events from "./components/Events";
 
 export default function Home() {
 
@@ -12,6 +13,7 @@ export default function Home() {
         <BrandsInfiniteScroll />
         <OurServicesSection />
         <OurSuccess />
+        <Events/>
      
     
       </main>
