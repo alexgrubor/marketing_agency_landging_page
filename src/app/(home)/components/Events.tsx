@@ -1,5 +1,4 @@
 import BigTextInline from "@/app/components/ui/BigTextInline";
-import Image from "next/image";
 import EventCard from "./EventCard";
 
 const Events = () => {

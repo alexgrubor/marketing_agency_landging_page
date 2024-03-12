@@ -14,7 +14,7 @@ const EventCard: React.FC<EventCardProps> = ({
   industry,
 }) => {
   return (
-    <div className="bg-myPurple-600 p-4 max-w-[40rem]">
+    <div className="bg-myPurple-600 p-4 max-w-[40rem] shadow-md shadow-secondBg rotate-2">
       <div className="flex justify-between text-sm text-bg">
         <h3 className="text-secondBg text-3xl my-2">{title}</h3>
         <p># {industry}</p>
