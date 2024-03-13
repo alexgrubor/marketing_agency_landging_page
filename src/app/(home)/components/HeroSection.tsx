@@ -1,7 +1,7 @@
 'use client'
 import BigTextInline from "../../components/ui/BigTextInline";
 import LetsChatButton from "../../components/ui/LetsChatButton";
-import useResponsive from "@/hooks/useResponsive";
+import useResponsive from "../../../../utils/hooks/useResponsive";
 import BackgroundVideo from "./Backgroundvideo";
 
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
         <BackgroundVideo src="./videos/bgvideo.mp4" />
       )}
 
-      
+
       <div className="text-container text-center mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4">
           Boost

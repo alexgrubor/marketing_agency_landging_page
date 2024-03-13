@@ -1,7 +1,7 @@
 "use client";
 import MobileNavigationBar from "./MobileNavigationBar";
 import NavigationBar from "./NavigationBar";
-import useResponsive from "@/hooks/useResponsive";
+import useResponsive from "../../../utils/hooks/useResponsive";
 
 const Header = () => {
   const deviceType = useResponsive();
