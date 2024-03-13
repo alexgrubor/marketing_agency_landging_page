@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect to render BlogCard 1`] = `
+<div>
+  <div
+    class="bg-myPurple-600  w-full sm:w-1/2 md:w-1/3 lg:w-1/6 p-4 flex flex-col h-full overflow-hidden rounded-lg"
+  >
+    <h2
+      class="text-2xl my-2 font-bold"
+    >
+      title
+    </h2>
+    <img
+      alt="Blog_item"
+      data-nimg="1"
+      decoding="async"
+      height="400"
+      loading="lazy"
+      src="/_next/image?url=%2Fimages%2Fevent2.jpg&w=1200&q=75"
+      srcset="/_next/image?url=%2Fimages%2Fevent2.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2Fevent2.jpg&w=1200&q=75 2x"
+      style="color: transparent;"
+      width="600"
+    />
+    <p>
+      body
+    </p>
+    <button
+      class="bg-secondBg py-2 my-2 px-3"
+    >
+      Read More
+    </button>
+  </div>
+</div>
+`;
