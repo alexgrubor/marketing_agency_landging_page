@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Cookie from "./components/Cookie";
 
 export const metadata: Metadata = {
   title: "My Marketing Agency",
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-bg">
+        <Cookie/>
         <Header />
         {children}
         <Footer />

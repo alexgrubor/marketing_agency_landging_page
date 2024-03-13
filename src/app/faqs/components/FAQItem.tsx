@@ -10,9 +10,9 @@ const FAQItem = ({ question, answer } : FAQItemProps) => {
     const [isOpen, setIsOpen] = useState(false);
   
     return (
-      <div className="mb-4 shadow-md shadow-secondBg"> 
+      <div className="mb-4 shadow-md rounded-md shadow-secondBg"> 
         <button
-          className="bg-myPurple-600 text-white font-medium py-3 px-6 w-full rounded-t-md flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400"
+          className="bg-myPurple-600 text-secondBg font-medium py-3 px-6 w-full rounded-t-md flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-400"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-controls={`faq-content-${question}`} 
