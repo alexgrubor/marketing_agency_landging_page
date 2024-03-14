@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { GoogleTagManager } from '@next/third-parties/google';
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -25,7 +25,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <GoogleTagManager gtmId={process.env.GTM_ID ??''} />
+        <GoogleAnalytics gaId={process.env.GA_ID ?? ''} />
       </body>
     </html>
     </ClerkProvider>
