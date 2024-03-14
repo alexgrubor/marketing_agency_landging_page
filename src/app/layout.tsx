@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-
+import { ClerkProvider } from "@clerk/nextjs";
+import { GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -17,13 +18,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className="bg-bg">
         <Cookie/>
         <Header />
         {children}
         <Footer />
+        <GoogleTagManager gtmId={process.env.GTM_ID ??''} />
       </body>
     </html>
+    </ClerkProvider>
   );
 }
