@@ -14,8 +14,6 @@ const Numbers = ({ targetNumber }: NumbersProps) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log('intersecting');
-
             const intervalId = setInterval(() => {
               setCurrentNumber((prev) => {
                 const nextNumber = Math.min(prev + 1, targetNumber);
