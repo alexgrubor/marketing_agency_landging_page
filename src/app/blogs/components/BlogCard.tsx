@@ -19,8 +19,9 @@ const BlogCard = ({ blog }: BlogCardProps) => {
           alt="Blog_item"
           width={600}
           height={400}
+          
         />
-        <p>{truncatedBody}</p>
+        <p className="text-ellipsis">{truncatedBody}</p>
         <button className="bg-secondBg py-2 my-2 px-3">Read More</button>
       </div>
     );

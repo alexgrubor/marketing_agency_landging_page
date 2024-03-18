@@ -4,6 +4,7 @@ import OurSuccess from "./components/OurSuccess";
 import Events from "./components/Events";
 import WaveSection from "./components/WaveSection";
 import Testimonials from "./components/Testimonials";
+import BlogSection from "./components/BlogSection";
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
         <OurSuccess />
         <Events/>
         <Testimonials/>
+        <BlogSection/>
       </main>
     </>
   );
