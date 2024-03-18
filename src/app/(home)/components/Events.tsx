@@ -3,9 +3,9 @@ import EventCard from "./EventCard";
 
 const Events = () => {
   return (
-    <section className="md:min-h-screen text-secondBg flex flex-col items-center gap-4 p-4 my-3">
+    <section className="md:min-h-screen text-secondBg flex flex-col justify-center items-center gap-4 p-4 my-6">
       <BigTextInline text="Our Events" textColor="text-myPurple-600" />
-      <p>
+      <p className="mb-4 text-center">
         We are always hosting events to help our community. Check out what we're
         up to!
       </p>
