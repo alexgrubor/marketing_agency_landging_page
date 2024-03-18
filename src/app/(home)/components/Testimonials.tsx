@@ -27,7 +27,7 @@ const Testimonials = () => {
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <Image
-                      src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress"
+                      src="/team_icons/team1.svg"
                       alt="client1"
                       width={50}
                       height={50}
@@ -55,7 +55,7 @@ const Testimonials = () => {
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <Image
-                      src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/team_icons/team4.svg"
                       width={50}
                       height={50}
                       alt="client3"
@@ -86,7 +86,7 @@ const Testimonials = () => {
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <Image
-                      src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/team_icons/team2.svg"
                       alt=""
                       width={50}
                       height={50}
@@ -115,7 +115,7 @@ const Testimonials = () => {
                   </p>
                   <div className="flex items-center mt-4 space-x-4">
                     <Image
-                      src="https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      src="/team_icons/team3.svg"
                       alt="client2"
                       width={500}
                       height={500}
