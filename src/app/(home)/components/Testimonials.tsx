@@ -11,16 +11,28 @@ const Testimonials = () => {
             <p className="dark:text-gray-400">
               See why businesses and individuals trust our solutions.
             </p>
+            <p className="">
+              At Our Agency, we pride ourselves on delivering top-notch
+              marketing solutions tailored to meet your unique needs. Whether
+              you're a small startup or a large corporation, we're dedicated to
+              helping you achieve your goals and maximize your ROI.
+            </p>
+            <p className="">
+              With a team of experienced professionals and a proven track record
+              of success, we're committed to driving growth for your business
+              through innovative strategies and impactful campaigns. Partner
+              with us today and experience the difference firsthand.
+            </p>
           </div>
           <div className="p-6 xl:col-span-3">
             <div className="grid gap-4 md:grid-cols-2">
               <div className="grid content-center gap-4">
-                <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                <div className="p-6 rounded shadow-md shadow-myPurple-600 dark:bg-gray-900">
                   <p>
-                    Working with ABC Marketing Agency has been a game-changer
+                    Working with Our Marketing Agency has been a game-changer
                     for our company. Their innovative strategies and attention
                     to detail have significantly boosted our online presence and
-                    customer engagement. The team at ABC Marketing is not only
+                    customer engagement. The team at Our Marketing is not only
                     highly skilled but also incredibly responsive and dedicated.
                     I highly recommend their services to any business looking to
                     take their marketing efforts to the next level
@@ -42,9 +54,9 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-                <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                <div className="p-6 rounded shadow-md shadow-myPurple-600 dark:bg-gray-900">
                   <p>
-                    ABC Marketing Agency exceeded our expectations in every
+                    Our Marketing Agency exceeded our expectations in every
                     aspect. From the initial consultation to the execution of
                     our marketing campaigns, they demonstrated professionalism
                     and expertise. Their ability to understand our brand and
@@ -72,10 +84,10 @@ const Testimonials = () => {
                 </div>
               </div>
               <div className="grid content-center gap-4">
-                <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                <div className="p-6 rounded shadow-md shadow-myPurple-600 dark:bg-gray-900">
                   <p>
                     As a small business owner, finding the right marketing
-                    partner was crucial for our growth. ABC Marketing Agency
+                    partner was crucial for our growth. Our Marketing Agency
                     came highly recommended, and they did not disappoint. Their
                     team took the time to understand our unique needs and
                     crafted customized strategies that aligned perfectly with
@@ -101,13 +113,13 @@ const Testimonials = () => {
                     </div>
                   </div>
                 </div>
-                <div className="p-6 rounded shadow-md dark:bg-gray-900">
+                <div className="p-6 rounded shadow-md shadow-myPurple-600 dark:bg-gray-900">
                   <p>
-                    ABC Marketing Agency has been instrumental in helping us
+                    Our Marketing Agency has been instrumental in helping us
                     navigate the complexities of digital marketing. Their
                     expertise in SEO, PPC, and social media marketing has
                     significantly improved our online visibility and generated
-                    quality leads for our business. What sets ABC Marketing
+                    quality leads for our business. What sets Our Marketing
                     apart is their commitment to delivering results and their
                     proactive approach to optimizing campaigns for maximum ROI.
                     I highly recommend their services to any business looking to
