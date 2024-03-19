@@ -1,6 +1,11 @@
-const page = () => {
-  return (
-    <div className="bg-secondBg min-h-screen">page</div>
-  )
+
+const DashboardPage = () => {
+    return (
+        <div className="bg-secondBg">
+            <h1>Dashboard</h1>
+        </div>
+    )
+
+
 }
-export default page
+export default DashboardPage
