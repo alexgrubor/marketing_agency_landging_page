@@ -5,9 +5,9 @@ import BigTextInline from "@/app/components/ui/BigTextInline";
 
 export default function OurValues() {
   return (
-    <main className="bg-secondBg flex flex-col min-h-screen justify-center items-center gap-8">
-      <div className="flex flex-col md:flex-row justify-center">
-        <div className="w-full md:w-1/3 p-4">
+    <main className="bg-secondBg flex flex-col min-h-screen justify-center items-center p-4 gap-8">
+      <div className="flex flex-col  justify-center">
+        <div className="w-full  p-4">
           <BigTextInline text="Our Values" textColor="text-myPurple-600" />
           <ul>
             <li>
@@ -41,7 +41,7 @@ export default function OurValues() {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="flex justify-center">
           <Image src="/images/event1.jpg" alt="xx" width={800} height={600} />
         </div>
       </div>
