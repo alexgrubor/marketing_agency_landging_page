@@ -6,7 +6,7 @@ interface TabSiderProps {
 }
 const TabSider = ({ TabMenu, changeActiveTab, activeTab }: TabSiderProps) => {
   return (
-    <div className="bg-bg w-1/6 p-2 text-secondBg">
+    <div className="bg-bg  p-2 text-secondBg">
       <ul>
         {TabMenu.map((item) => (
           <li

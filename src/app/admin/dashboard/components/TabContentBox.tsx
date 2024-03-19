@@ -23,7 +23,7 @@ const TabContentBox = ({ activeTab }: TabContentBoxProps) => {
     }
   };
 
-  return <div>{whatTabToShow(activeTab)}</div>;
+  return <div className="bg-white max-h-screen h-screen w-full">{whatTabToShow(activeTab)}</div>;
 };
 
 export default TabContentBox;
