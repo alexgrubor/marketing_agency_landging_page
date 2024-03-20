@@ -127,7 +127,7 @@ const WaveSection = (
       <div className="text-container text-secondBg text-center mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-32">
       <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4">
         Boost
-        <span className="text-myPurple-600   drop-shadow-lg">Your Brand</span> with
+        <span className="text-myPurple-600  mx-3  drop-shadow-lg">Your Brand</span> with
         XYZ Marketing
       </h1>
         <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-8">

@@ -1,10 +1,13 @@
 import { TabMenuItem } from "../page";
+import { useUser } from "@clerk/nextjs";
+import { SignOutButton } from "@clerk/nextjs";
 interface TabSiderProps {
   TabMenu: TabMenuItem[];
   changeActiveTab: (tabName: TabMenuItem["name"]) => void;
   activeTab:string
 }
 const TabSider = ({ TabMenu, changeActiveTab, activeTab }: TabSiderProps) => {
+  const user = useUser();
   return (
     <div className="bg-bg  p-2 text-secondBg">
       <ul>
@@ -23,6 +26,9 @@ const TabSider = ({ TabMenu, changeActiveTab, activeTab }: TabSiderProps) => {
           </li>
         ))}
       </ul>
+      {
+          user.isSignedIn ? <SignOutButton/> : ''
+        }
     </div>
   );
 };
