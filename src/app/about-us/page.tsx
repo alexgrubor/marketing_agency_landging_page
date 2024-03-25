@@ -1,4 +1,4 @@
-"use client";
+
 import HeroSection from "./components/HeroSection";
 import OurMission from "./components/OurMission";
 import Image from "next/image";
@@ -8,9 +8,9 @@ import Team from "./components/Team";
 import Testemonials from "./components/Testemonials";
 import StickyScroll from "./components/StickyScroll";
 import BrandsInfiniteScroll from "../(home)/components/BrandsInfiniteScroll";
-import useResponsive from "../../../utils/hooks/useResponsive";
+
 const AboutUSPage = () => {
-  const deviceType = useResponsive();
+
   const content = [
     {
       title: "Our Mission",
@@ -46,21 +46,15 @@ const AboutUSPage = () => {
   return (
     <div>
       <HeroSection />
-
-      {deviceType === "desktop" && (
-        <>
-          <BrandsInfiniteScroll />
-          <StickyScroll content={content} />
-        </>
-      )}
-      {deviceType === "mobile" ||
-        (deviceType === "tablet" && (
-          <>
-            <OurMission />
-            <OurStory />
-            <OurValues />
-          </>
-        ))}
+      <section className="hidden lg:block">
+        <BrandsInfiniteScroll />
+        <StickyScroll content={content} />
+      </section>
+      <section className="lg:hidden">
+        <OurMission />
+        <OurStory />
+        <OurValues />
+      </section>
       <Team />
       <Testemonials />
     </div>

@@ -1,7 +1,7 @@
 'use client'
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
-import useResponsive from "../../../../utils/hooks/useResponsive";
+
 const clients = [
   {
     name: 'John Doe',
@@ -41,13 +41,14 @@ const clients = [
   },
 ];
 const Testemonials = () => {
-  const deviceType = useResponsive();
+  
   return (
     <div className="bg-secondBg z-[3] p-4">
       <h2 className="text-3xl text-center text-myPurple-600 font-bold my-8">
         Testimonials
       </h2>
-      {deviceType !== 'mobile' && <Marquee gradient={false} speed={40}>
+   
+   <div className="hidden md:block"> <Marquee gradient={false} speed={40} >
         {clients.map((client, index) => (
           <div key={index} className="flex flex-col sm:flex-row border-2 shadow-sm shadow-myPurple-900 border-myPurple-600 m-3 items-center gap-4 p-3">
             <div className="flex-shrink-0">
@@ -60,9 +61,9 @@ const Testemonials = () => {
             </div>
           </div>
         ))}
-      </Marquee>}
-      {
-        deviceType === 'mobile' && clients.map((client, index) => (
+      </Marquee></div>
+      <div className="block sm:hidden">
+        {clients.map((client, index) => (
           <div key={index} className="flex flex-col sm:flex-row border-2 shadow-sm shadow-myPurple-900 border-myPurple-600 m-3 items-center gap-4 p-3">
             <div className="flex-shrink-0">
               <Image src={client.avatarPath} alt={`${client.name}'s Avatar`} width={100} height={100} className="rounded-full" />
@@ -73,8 +74,8 @@ const Testemonials = () => {
               <p className="text-black text-sm p-5">"{client.review}"</p>
             </div>
           </div>
-        ))
-      }
+        ))}
+      </div>
     </div>
   )
 }

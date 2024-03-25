@@ -4,7 +4,6 @@ import BrandsInfiniteScroll from "../(home)/components/BrandsInfiniteScroll";
 import Testimonials from "../(home)/components/Testimonials";
 import CallInquiryForm from "./components/CallInquiryForm";
 import CTASection from "./components/CTASection";
-import useResponsive from "../../../utils/hooks/useResponsive";
 import MobileHeroSection from "./components/MobileHeroSection";
 import MobileServicesSection from "./components/MobileServicesSection";
 export interface Product {
@@ -13,7 +12,7 @@ export interface Product {
   thumbnail: string;
 }
 const OurServicePage = () => {
-  const deviceType = useResponsive();
+
   const products = [
     {
       title: "Web design",
@@ -107,20 +106,23 @@ const OurServicePage = () => {
   ] as Array<Product>;
   return (
     <div>
-      {deviceType === "desktop" && (
-        <>
-          <HeroSection products={products} />
-          <BrandsInfiniteScroll />
-        </>
-      )}
-      {deviceType === "mobile" && (
-        <>
-          <MobileHeroSection />
-          <MobileServicesSection products={products.slice(0,6)} title="Our Services"/>
-          <MobileServicesSection products={products.slice(6,10)} bgColor="bg-bg"/>
+      <section className="hidden md:block">
+        <HeroSection products={products} />
+        <BrandsInfiniteScroll />
+      </section>
 
-        </>
-      )}
+      <section className="md:hidden">
+        <MobileHeroSection />
+        <MobileServicesSection
+          products={products.slice(0, 6)}
+          title="Our Services"
+        />
+        <MobileServicesSection
+          products={products.slice(6, 10)}
+          bgColor="bg-bg"
+        />
+      </section>
+
       <Testimonials />
       <CallInquiryForm />
       <CTASection />

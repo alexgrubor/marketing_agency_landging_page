@@ -19,7 +19,6 @@ const TestimonialCard = ({ quote, name, title, company, image } :TestimonialCard
           alt={name}
           width={50}
           height={50}
-          layout="fit"
           className="w-12 h-12 rounded-full"
         />
         <div>
