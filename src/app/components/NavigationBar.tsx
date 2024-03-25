@@ -8,7 +8,7 @@ const NavigationBar = () => {
   const user = useUser();
   return (
     <nav
-      className="flex justify-between sticky top-0 bg-bg items-center p-4 shadow-sm shadow-secondBg text-white text-2xl z-30"
+      className="hidden md:flex justify-between sticky top-0 bg-bg items-center p-4 shadow-sm shadow-secondBg text-white text-2xl z-30"
     >
       <div className="flex gap-4">
         <NavLink href="/">LOGO</NavLink>

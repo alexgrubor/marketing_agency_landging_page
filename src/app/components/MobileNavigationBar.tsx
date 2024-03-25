@@ -22,7 +22,7 @@ const MobileNavigationBar = () => {
     };
   }, [isOpen]);
   return (
-    <nav className="flex justify-between items-center bg-bg text-secondBg p-4">
+    <nav className="flex justify-between items-center bg-bg text-secondBg p-4 md:hidden">
       <div>
         <NavLink href="/">LOGO</NavLink>
       </div>
