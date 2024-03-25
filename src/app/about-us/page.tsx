@@ -8,6 +8,7 @@ import Team from "./components/Team";
 import Testemonials from "./components/Testemonials";
 import StickyScroll from "./components/StickyScroll";
 import BrandsInfiniteScroll from "../(home)/components/BrandsInfiniteScroll";
+import MobileHeroSection from "../components/MobileHeroSection";
 
 const AboutUSPage = () => {
 
@@ -46,6 +47,12 @@ const AboutUSPage = () => {
   return (
     <div>
       <HeroSection />
+      <MobileHeroSection
+        title="YOUR BRAND"
+        description="IS OUR JOB"
+        buttonText="Start Now"
+        buttonLink="/contact-us"
+      />
       <section className="hidden lg:block">
         <BrandsInfiniteScroll />
         <StickyScroll content={content} />

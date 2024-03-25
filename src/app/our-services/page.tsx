@@ -4,7 +4,7 @@ import BrandsInfiniteScroll from "../(home)/components/BrandsInfiniteScroll";
 import Testimonials from "../(home)/components/Testimonials";
 import CallInquiryForm from "./components/CallInquiryForm";
 import CTASection from "./components/CTASection";
-import MobileHeroSection from "./components/MobileHeroSection";
+import MobileHeroSection from "../components/MobileHeroSection";
 import MobileServicesSection from "./components/MobileServicesSection";
 export interface Product {
   title: string;
@@ -112,7 +112,12 @@ const OurServicePage = () => {
       </section>
 
       <section className="md:hidden">
-        <MobileHeroSection />
+        <MobileHeroSection
+          title="Welcome to Our Website"
+          description="Your go-to destination for all your marketing need"
+          buttonText="Learn More"
+          buttonLink="/about-us" 
+         />
         <MobileServicesSection
           products={products.slice(0, 6)}
           title="Our Services"
