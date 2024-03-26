@@ -1,5 +1,5 @@
 import Dashboard from "./Dashboard";
-import Jobs from "./Jobs";
+import Jobs from "./jobs/Jobs";
 import Blogs from "./Blogs";
 import Settings from "./Settings";
 
