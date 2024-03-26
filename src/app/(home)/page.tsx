@@ -1,3 +1,4 @@
+import Head from "next/head";
 import OurServicesSection from "./components/OurServicesSection";
 import BrandsInfiniteScroll from "./components/BrandsInfiniteScroll";
 import OurSuccess from "./components/OurSuccess";
@@ -6,10 +7,17 @@ import WaveSection from "./components/WaveSection";
 import Testimonials from "./components/Testimonials";
 import BlogSection from "./components/BlogSection";
 import MobileHeroSection from "../components/MobileHeroSection";
+import Feature from "./components/Feature";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Home | Agency</title>
+        <meta name="description" content="Agency Home Page" />
+        <link rel="icon" href="/favicon.ico" />
+        
+        </Head>
       <main className="">
         <WaveSection />
         <MobileHeroSection
@@ -21,6 +29,7 @@ export default function Home() {
         <BrandsInfiniteScroll />
         <OurServicesSection />
         <OurSuccess />
+        <Feature />
         <Events />
         <Testimonials />
         <BlogSection />

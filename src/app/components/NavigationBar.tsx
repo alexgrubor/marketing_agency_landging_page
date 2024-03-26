@@ -1,10 +1,12 @@
 'use client'
 import NavLink from "next/link";
 import LetsChatButton from "./ui/LetsChatButton";
-import { useUser } from "@clerk/nextjs";
-import { SignOutButton } from "@clerk/nextjs";
+import { useUser, SignOutButton, useAuth } from "@clerk/nextjs";
+
 
 const NavigationBar = () => {
+  const { sessionId } = useAuth();
+
   const user = useUser();
   return (
     <nav
@@ -13,7 +15,7 @@ const NavigationBar = () => {
       <div className="flex gap-4">
         <NavLink href="/">LOGO</NavLink>
         {
-          user.isSignedIn ? <SignOutButton/> : ''
+          user.isSignedIn ? <SignOutButton signOutOptions={{ sessionId: sessionId ?? '' }} /> : ''
         }
         
       </div>
