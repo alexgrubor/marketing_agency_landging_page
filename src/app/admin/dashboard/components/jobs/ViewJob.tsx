@@ -9,7 +9,7 @@ const ViewJob = ({ job_id }: ViewJobProps) => {
 
   useEffect(() => {
     const fetchJob = async () => {
-      const response = await axios.get(`http://localhost:3000/api/admin/jobs/${job_id}`);
+      const response = await axios.get(`/api/admin/jobs/${job_id}`);
       setJob(response.data);
     };
     fetchJob();

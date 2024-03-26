@@ -10,7 +10,7 @@ const EditJob = ({ job_id }: EditJobProps) => {
   useEffect(() => {
     const fetchJob = async () => {
       const response = await fetch(
-        `http://localhost:3000/api/admin/jobs/${job_id}`
+        `/api/admin/jobs/${job_id}`
       );
       const data = await response.json();
       setJob(data);

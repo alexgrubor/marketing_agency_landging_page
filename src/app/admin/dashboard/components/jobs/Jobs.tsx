@@ -24,7 +24,7 @@ const Jobs = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/admin/jobs")
+      .get("/api/admin/jobs")
       .then((response) => {
         setJobs(response.data);
       });
