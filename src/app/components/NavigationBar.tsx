@@ -1,12 +1,13 @@
 'use client'
 import NavLink from "next/link";
 import LetsChatButton from "./ui/LetsChatButton";
+import { usePathname } from "next/navigation";
 import { useUser, SignOutButton, useAuth } from "@clerk/nextjs";
 
 
 const NavigationBar = () => {
   const { sessionId } = useAuth();
-
+  const pathname = usePathname();
   const user = useUser();
   return (
     <nav
@@ -20,30 +21,42 @@ const NavigationBar = () => {
         
       </div>
       <ul className="flex gap-6">
-        <li>
-          <NavLink
-            className="transition-all duration-300 hover:text-myPurple-600"
-            href="/about-us"
-          >
-            About Us
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="transition-all duration-300 hover:text-myPurple-600"
-            href="/our-services"
-          >
-            Services
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            className="transition-all duration-300 hover:text-myPurple-600"
-            href="/careers"
-          >
-            Careers
-          </NavLink>
-        </li>
+      <li>
+                    <NavLink
+                        className={`transition-all duration-300 ${
+                            pathname === "/about-us"
+                                ? "text-myPurple-600"
+                                : "hover:text-myPurple-600"
+                        }`}
+                        href="/about-us"
+                    >
+                        About Us
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className={`transition-all duration-300 ${
+                            pathname === "/our-services"
+                                ? "text-myPurple-600"
+                                : "hover:text-myPurple-600"
+                        }`}
+                        href="/our-services"
+                    >
+                        Services
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink
+                        className={`transition-all duration-300 ${
+                            pathname === "/careers"
+                                ? "text-myPurple-600"
+                                : "hover:text-myPurple-600"
+                        }`}
+                        href="/careers"
+                    >
+                        Careers
+                    </NavLink>
+                </li>
         <li>
           <LetsChatButton href="/contact-us" text="Let's Chat" />
         </li>
