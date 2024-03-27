@@ -7,7 +7,7 @@ const Footer = () => {
           <h2 className="text-lg font-bold mb-2">Agency</h2>
           <ul>
             <li>
-              <Link href="/services">Our Services</Link>
+              <Link href="/our-services">Our Services</Link>
             </li>
             <li>
               <Link href="/contact-us">Contact Us</Link>

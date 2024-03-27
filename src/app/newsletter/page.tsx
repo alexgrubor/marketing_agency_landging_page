@@ -2,7 +2,7 @@ import SocialMediaContainer from "../components/ui/SocialMediaContainer"
 
 const NewsletterPage = () => {
   return (
-    <div className="min-h-screen bg-secondBg p-8 h-screen flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-secondBg p-8 h-screen flex flex-col justify-center items-center overflow-x-hidden">
     <div className="max-w-2xl mx-auto text-center">
       <h1 className="text-4xl font-bold text-myPurple-600 mb-4">Stay Connected with Our Newsletter</h1>
       <p className="text-gray-600">Subscribe to our newsletter to receive the latest updates, insights, and exclusive offers from our marketing experts.</p>
