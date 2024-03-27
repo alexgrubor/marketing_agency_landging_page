@@ -7,7 +7,7 @@ const NewsletterPage = () => {
       <h1 className="text-4xl font-bold text-myPurple-600 mb-4">Stay Connected with Our Newsletter</h1>
       <p className="text-gray-600">Subscribe to our newsletter to receive the latest updates, insights, and exclusive offers from our marketing experts.</p>
       <form className="mt-6">
-        <div className="flex items-center justify-center">
+        <div className="flex items-center p-3 justify-center">
           <input
             type="email"
             placeholder="Enter your email"
