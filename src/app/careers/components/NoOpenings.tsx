@@ -5,8 +5,7 @@ const Openings = () => {
     <p className="text-xl leading-relaxed mb-8">
       We're constantly seeking talented and passionate individuals who are
       excited by the world of marketing and share our drive to create
-      exceptional results for our clients. While we may not have specific
-      openings at this very moment, we're always open to hearing from
+      exceptional results for our clients. We're always open to hearing from
       initiative-driven individuals who can bring fresh perspectives and
       valuable skills to our team.
     </p>

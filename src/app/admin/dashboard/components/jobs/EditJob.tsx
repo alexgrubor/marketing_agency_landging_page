@@ -20,7 +20,7 @@ const EditJob = ({ job_id }: EditJobProps) => {
   if (!job) return null;
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Handle form submission logic here (update the job on your backend)
+    
   };
   return (
     <div className="w-[45vw] mx-auto">

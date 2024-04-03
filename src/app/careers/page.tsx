@@ -1,14 +1,16 @@
 
 import HeroSection from "./components/HeroSection";
-import Openings from "./components/Openings";
+import JobOpenings from "./components/JobOpenings";
+import NoOpenings from "./components/NoOpenings";
 import WhyJoin from "./components/WhyJoin";
 const page = () => {
   return (
-   <>
-   <HeroSection/>
-   <WhyJoin/>
-   <Openings/>
-   </>
+    <>
+      <HeroSection />
+      <WhyJoin />
+      <JobOpenings/>
+      <NoOpenings />
+    </>
   );
 };
 export default page;
