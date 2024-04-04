@@ -9,7 +9,7 @@ interface TabSiderProps {
 const TabSider = ({ TabMenu, changeActiveTab, activeTab }: TabSiderProps) => {
   const user = useUser();
   return (
-    <div className="bg-bg  p-2 text-secondBg">
+    <div className="bg-bg flex flex-col justify-between  p-2 text-secondBg">
       <ul>
         {TabMenu.map((item) => (
           <li
