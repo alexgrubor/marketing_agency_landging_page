@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Client } from "pg";
+
+
 export async function POST(req: NextRequest) {
   try {
     const formData = await req.json();
@@ -55,4 +57,25 @@ export async function POST(req: NextRequest) {
       { status: 500 }
     );
   }
+}
+
+export async function GET(request: NextRequest) {
+  
+  const authHeader = request.headers.get('Authorization');
+  if (!authHeader) {
+    return new NextResponse('Unauthorized', { status: 401 });
+  }
+  const client = new Client({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+      rejectUnauthorized: false,
+    },
+  });
+  await client.connect();
+
+  const res = await client.query("SELECT * FROM contact_submissions");
+
+  await client.end();
+
+  return NextResponse.json(res.rows);
 }

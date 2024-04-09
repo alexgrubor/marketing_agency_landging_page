@@ -25,6 +25,10 @@ const DashboardPage = () => {
       name: "Settings",
       active: false,
     },
+    {
+      name: "Contact Form Data",
+      active: false,
+    }
   ];
 
   const [activeTab, setActiveTab] = useState(tabMenu[0].name);
